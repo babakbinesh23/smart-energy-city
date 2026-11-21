@@ -1,4 +1,4 @@
-name: Deploy public reference demo to GitHub Pages
+name: Deploy Smart Energy City portal to GitHub Pages
 
 on:
   push:
@@ -11,15 +11,13 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
+    name: Build and upload Pages site
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -27,16 +25,28 @@ jobs:
           node-version: '22'
       - name: Install dependencies
         run: npm install --no-audit --no-fund
-      - name: Run unit tests
+      - name: Test
         run: npm test
-      - name: Build static demo
+      - name: Build portal and reference
         run: npm run build
-      - name: Configure Pages
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Upload Pages artifact
+      - name: Upload site artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
-      - name: Deploy to GitHub Pages
+
+  deploy:
+    name: Publish GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # Artifact listing may lag just after a successful upload.
+      - name: Allow GitHub Actions artifact indexing
+        run: sleep 12
+      - name: Deploy uploaded site
         id: deployment
         uses: actions/deploy-pages@v4
