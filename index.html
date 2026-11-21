@@ -1,46 +1,34 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#071924" />
-  <meta name="description" content="نمونه متن‌باز شهر هوشمند انرژی: تجربه سه‌بعدی آموزشی با Three.js."/>
-  <title>شهر هوشمند انرژی | نمونه متن‌باز</title>
-</head>
-<body>
-  <div id="app">
-    <header class="topbar">
-      <a class="brand" href="#" aria-label="Smart Energy City">
-        <span class="brand-mark">✳</span>
-        <span><strong>شهر هوشمند انرژی</strong><small>نسخه نمایشی متن‌باز</small></span>
-      </a>
-      <div class="top-actions">
-        <span class="status"><i></i> نمونه قابل اجرا</span>
-        <a href="https://github.com/babakbinesh23" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-      </div>
-    </header>
-    <main class="layout">
-      <section class="world" aria-label="محیط سه‌بعدی">
-        <div id="scene" role="img" aria-label="شهر انرژی سه‌بعدی تعاملی"></div>
-        <div class="world-caption">با ماوس بچرخان • برای بزرگ‌نمایی اسکرول کن • روی بخش‌های شهر کلیک کن</div>
-        <div class="scene-badge">THREE.JS / WEBGL</div>
-      </section>
-      <aside class="control-panel" aria-label="داشبورد انرژی">
-        <p class="eyebrow">INTERACTIVE ENERGY LAB</p>
-        <h1>انرژی را <span>تجربه کن.</span></h1>
-        <p class="intro">یک نمونه مستقل برای نمایش مفاهیم تولید برق خورشیدی، تجمیع تولید، بهینه‌سازی و ذخیره‌سازی انرژی؛ اعداد صرفاً آموزشی‌اند.</p>
-        <div class="zone-list" id="zone-list"></div>
-        <section class="calculator" aria-labelledby="calc-title">
-          <h2 id="calc-title">محاسبه‌گر آموزشی</h2>
-          <p id="calc-description"></p>
-          <div id="calc-controls"></div>
-          <output id="calc-output" aria-live="polite"></output>
-          <div class="footnote">این ارقام نمونه هستند؛ تصمیم مالی یا فنی را بر اساس آنها نگیرید.</div>
-        </section>
-      </aside>
-    </main>
-    <footer>Smart Energy City — Open-source reference demo, not the proprietary production environment.</footer>
-  </div>
-  <script type="module" src="/src/main.js"></script>
-</body>
-</html>
+<html lang="fa" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#091b26"><title>شهر هوشمند انرژی برقتو — پروژه اصلی</title>
+<meta name="description" content="صفحه معرفی و ورود به نسخه اصلی شهر هوشمند انرژی برقتو">
+<style>
+:root{font-family:Tahoma,system-ui,sans-serif;color:#eafff8;background:#091b26}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% 35%,#174a4b 0,#102b37 35%,#071620 92%);min-height:100vh}
+a{text-decoration:none;color:inherit}header{border-bottom:1px solid #ffffff19;min-height:72px;display:flex;align-items:center;justify-content:space-between;padding:16px max(26px,5vw);gap:20px}header b{font-size:18px}header a{color:#8eead6;font-size:13px}
+main{max-width:1100px;margin:auto;padding:74px 24px 30px}
+sup{font-size:12px;letter-spacing:1px;color:#71d5c8}h1{font-size:clamp(30px,5vw,60px);line-height:1.65;margin:12px 0}h1 em{color:#67e5c5;font-style:normal}
+p{color:#b5ccd3;font-size:16px;line-height:2.3;max-width:850px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin:34px 0}
+.btn{padding:15px 22px;border-radius:12px;font-weight:bold;font-size:15px;display:inline-flex;align-items:center;justify-content:center;min-height:54px}
+.primary{background:#64ddc2;color:#063039} .outline{border:1px solid #58838b;background:#18323d}
+.note{margin:30px 0 0;border-right:3px solid #5fddbc;padding:8px 18px;font-size:13px;background:#112c3770}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px}
+.card{border:1px solid #37727679;background:#102d37a1;border-radius:14px;padding:23px}.card strong{display:block;font-size:17px;margin-bottom:15px}.card p{font-size:13px;margin:0;line-height:2}
+footer{color:#7299a1;font-size:12px;max-width:1100px;margin:70px auto 20px;padding:20px;border-top:1px solid #ffffff12}
+@media(max-width:730px){main{padding-top:44px}.grid{grid-template-columns:1fr}.btn{width:100%}}
+</style></head><body>
+<header><b>✳ شهر هوشمند انرژی برقتو</b><a href="https://github.com/babakbinesh23/smart-energy-city" target="_blank" rel="noopener noreferrer">مخزن GitHub ↗</a></header>
+<main>
+<sup>ORIGINAL EXPERIENCE · WORDPRESS · THREE.JS · BABYLON.JS</sup>
+<h1>وارد <em>شهر واقعی</em> هوشمند انرژی شو</h1>
+<p>این صفحه راه ورود به نسخه اصلی پروژه است؛ تجربه سه‌بعدی کامل شهر روی وب‌سایت برقتو اجرا می‌شود و شامل محیط کارخانه، نیروگاه خورشیدی، تجمیع برق سبز، بهینه‌سازی، ساختمان سه‌بعدی و قابلیت‌های تعاملی است.</p>
+<nav class="actions"><a class="btn primary" href="https://www.bodara.ir/barghetocity/" target="_blank" rel="noopener noreferrer">ورود به نسخه اصلی شهر ↗</a><a class="btn outline" href="./reference/">مشاهده نمونه آموزشی ساده</a><a class="btn outline" href="https://github.com/babakbinesh23/smart-energy-city" target="_blank" rel="noopener noreferrer">مشاهده کد متن‌باز</a></nav>
+<p class="note"><b>تفاوت مهم:</b> نسخه اصلی در نشانی برقتو روی وردپرس میزبانی می‌شود. نمونه دوم صرفاً پروژه‌ای مستقل با مدل‌های ساده و فرمول‌های آموزشی است، نه شهر نسخه 2.5.250. سورس خصوصی، مدل‌ها و صداهای نسخه اصلی تحت مجوز MIT این مخزن منتشر نشده‌اند.</p>
+<section class="grid">
+<article class="card"><strong>🏭 کارخانه و تأمین برق</strong><p>نمایش زیرساخت، محیط صنعتی و سناریوهای انرژی صنایع</p></article>
+<article class="card"><strong>☀️ خورشیدی و نیروگاه مجازی</strong><p>محیط تولید، پنل‌ها و تجمیع تولید برق خانگی</p></article>
+<article class="card"><strong>🥽 شهر سه‌بعدی و VR</strong><p>تجربه مبتنی بر Three.js و بخش اداری Babylon.js</p></article>
+</section>
+</main><footer>Smart Energy City — صفحه معرفی محصول اصلی؛ کد و دارایی‌های اختصاصی این محصول داخل مخزن عمومی نیستند.</footer>
+</body></html>

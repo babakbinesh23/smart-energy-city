@@ -1,5 +1,13 @@
 # Smart Energy City — Interactive 3D Energy Education
 
+**Important: The screenshot of a simplified city was NOT the original Bargheto game.** We corrected this distinction.
+
+- [Enter the **real WordPress-hosted Smart Energy City**](https://www.bodara.ir/barghetocity/)
+- [GitHub Pages **project portal**](https://babakbinesh23.github.io/smart-energy-city/)
+- [Separate **lightweight educational reference**](https://babakbinesh23.github.io/smart-energy-city/reference/)
+- [Differences and deployment dependencies](docs/ORIGINAL_VS_REFERENCE.md)
+
+
 ![Status](https://img.shields.io/badge/status-early%20open--source%20reference-118a84)
 ![Three.js](https://img.shields.io/badge/3D-Three.js-1e5e72)
 ![License](https://img.shields.io/badge/reference%20code-MIT-blue)
@@ -71,7 +79,9 @@ GitHub: [@babakbinesh23](https://github.com/babakbinesh23)
 
 ## Online reference demo & public release
 
-- **GitHub Pages demo:** [Interactive educational city](https://babakbinesh23.github.io/smart-energy-city/) *(available after GitHub Pages is enabled under Settings → Pages → GitHub Actions)*
+- **Original game on Bargheto:** [Open actual version 2.5.250](https://www.bodara.ir/barghetocity/)
+- **Reference demo:** [Simple Three.js teaching example](https://babakbinesh23.github.io/smart-energy-city/reference/)
+- **GitHub Pages:** [Project portal](https://babakbinesh23.github.io/smart-energy-city/)
 - **Releases:** [v0.1.0 public reference release](https://github.com/babakbinesh23/smart-energy-city/releases/tag/v0.1.0) *(requires the automated release workflow to succeed)*
 - **Documentation:** [فارسی: Installation](docs/INSTALL_FA.md) · [فارسی: Contributing](docs/CONTRIBUTING_FA.md) · [Deployment instructions](docs/DEMO_SETUP_FA.md) · [Evidence](docs/EVIDENCE.md) · [Release notes](docs/RELEASE_NOTES_v0.1.0.md)
 

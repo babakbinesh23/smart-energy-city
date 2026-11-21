@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite';
-
-// GitHub Pages serves a project repository under /smart-energy-city/.
-// Local development remains available at the usual / path.
+import { resolve } from 'node:path';
 export default defineConfig(({ command }) => ({
   base: command === 'build' ? '/smart-energy-city/' : '/',
+  build: { rollupOptions: { input: {
+    portal: resolve(process.cwd(), 'index.html'),
+    reference: resolve(process.cwd(), 'reference/index.html'),
+  } } },
 }));
