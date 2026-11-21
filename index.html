@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#071924" />
+  <meta name="description" content="نمونه متن‌باز شهر هوشمند انرژی: تجربه سه‌بعدی آموزشی با Three.js."/>
+  <title>شهر هوشمند انرژی | نمونه متن‌باز</title>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Smart Energy City">
+        <span class="brand-mark">✳</span>
+        <span><strong>شهر هوشمند انرژی</strong><small>نسخه نمایشی متن‌باز</small></span>
+      </a>
+      <div class="top-actions">
+        <span class="status"><i></i> نمونه قابل اجرا</span>
+        <a href="https://github.com/babakbinesh23" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </header>
+    <main class="layout">
+      <section class="world" aria-label="محیط سه‌بعدی">
+        <div id="scene" role="img" aria-label="شهر انرژی سه‌بعدی تعاملی"></div>
+        <div class="world-caption">با ماوس بچرخان • برای بزرگ‌نمایی اسکرول کن • روی بخش‌های شهر کلیک کن</div>
+        <div class="scene-badge">THREE.JS / WEBGL</div>
+      </section>
+      <aside class="control-panel" aria-label="داشبورد انرژی">
+        <p class="eyebrow">INTERACTIVE ENERGY LAB</p>
+        <h1>انرژی را <span>تجربه کن.</span></h1>
+        <p class="intro">یک نمونه مستقل برای نمایش مفاهیم تولید برق خورشیدی، تجمیع تولید، بهینه‌سازی و ذخیره‌سازی انرژی؛ اعداد صرفاً آموزشی‌اند.</p>
+        <div class="zone-list" id="zone-list"></div>
+        <section class="calculator" aria-labelledby="calc-title">
+          <h2 id="calc-title">محاسبه‌گر آموزشی</h2>
+          <p id="calc-description"></p>
+          <div id="calc-controls"></div>
+          <output id="calc-output" aria-live="polite"></output>
+          <div class="footnote">این ارقام نمونه هستند؛ تصمیم مالی یا فنی را بر اساس آنها نگیرید.</div>
+        </section>
+      </aside>
+    </main>
+    <footer>Smart Energy City — Open-source reference demo, not the proprietary production environment.</footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
