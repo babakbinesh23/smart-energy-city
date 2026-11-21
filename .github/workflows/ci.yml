@@ -13,6 +13,11 @@ jobs:
           node-version: '22'
       - name: Guard public source against obvious private files and secrets
         run: node scripts/oss-preflight.mjs
+      - name: Reconstruct and checksum original code-only sources
+        run: |
+          node production/v2.5.250/restore-split-files.mjs
+          node --check production/v2.5.250/game/dist/assets/index-2.5.250.js
+          node --check production/v2.5.250/office/xr-babylon-8.46.2.js
       - run: npm install
       - run: npm test
       - run: npm run build
