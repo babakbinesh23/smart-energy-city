@@ -11,6 +11,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Guard public source against obvious private files and secrets
+        run: node scripts/oss-preflight.mjs
       - run: npm install
       - run: npm test
       - run: npm run build
