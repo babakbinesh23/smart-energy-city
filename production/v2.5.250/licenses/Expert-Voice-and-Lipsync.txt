@@ -1,0 +1,1 @@
+User-supplied voice recording and avatar. Existing asset credits retained. Lip animation cue data generated locally with Rhubarb Lip Sync 1.14.0 phonetic recognizer. Rhubarb executable and recognition models are not redistributed in the game. Source: https://github.com/DanielSWolf/rhubarb-lip-sync

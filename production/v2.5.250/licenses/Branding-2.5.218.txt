@@ -1,0 +1,5 @@
+User-supplied reference: image(20261104-144719).png
+SHA256: 5ab184e1d23beac83bb44332a62d961eee01090c26fb1e72dc04cb5facfbcced
+Original PNG preserved as game/dist/assets/bargheto-logo-reference-2.5.218.png.
+Contour data is traced from the original navy and gold artwork, including lettering.
+No third-party artwork added.

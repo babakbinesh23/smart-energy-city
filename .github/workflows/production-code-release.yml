@@ -1,0 +1,38 @@
+name: Publish code-only v2.5.250 release
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/production-code-release.yml'
+      - 'production/v2.5.250/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create code-only prerelease if missing
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner=context.repo.owner, repo=context.repo.repo;
+            const tag='v2.5.250-code-only';
+            try { await github.rest.repos.getReleaseByTag({owner,repo,tag}); core.info('Release exists'); return; }
+            catch (e) { if(e.status!==404) throw e; }
+            const body=[
+              '## Real Bargheto Smart Energy City WordPress code v2.5.250 — sanitized code-only release',
+              'Contains the actual plugin backend and distributed frontend code, minus visitor records, models, audio, videos, fonts and private configuration.',
+              'Three oversized text sources are stored in parts; restore with `node production/v2.5.250/restore-split-files.mjs`.',
+              'WARNING: The public PHP copy removes a fixed admin password. This does not patch the currently deployed WordPress site.',
+              'The full 3D game requires WordPress, permitted media, dynamic runtime configuration and further security testing.',
+              'No claim of external contributors, user adoption, or full editable-source reproducibility is made.'
+            ].join('\n\n');
+            const r=await github.rest.repos.createRelease({
+              owner,repo,tag_name:tag,target_commitish:context.sha,
+              name:'Bargheto Smart Energy City v2.5.250 — code-only source',
+              body,draft:false,prerelease:true,make_latest:'false'
+            });
+            core.info(r.data.html_url);

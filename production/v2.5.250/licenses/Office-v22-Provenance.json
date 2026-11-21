@@ -1,0 +1,34 @@
+{
+  "originalFile": "Bargheto-Office-300m-v22-Eric-Drag-Fix.html",
+  "preservedAt": "office/source-v22.html",
+  "sha256": "6d94cc156cf3b9f347f6238b39f7c246b3ff81e3eaf46ec850b717aa179250ae",
+  "sizeBytes": 37088367,
+  "integration": "Direct original Babylon scene. Embedded layout, GLBs, textures, video and five recordings unchanged. Runtime adapter adds server-verified roles, persisted layout, city return and native WebXR. v2.5.99 adds SHA-verified public asset cache, unified loading, manual distance-faded conversations and one shared city/office touch controller.",
+  "runtime": "Babylon.js 8.46.2; shared original ShaderStore and EngineStore.",
+  "inventory": {
+    "authoredObjects": 117,
+    "registeredObjects": 123,
+    "meshes": 532,
+    "guideRecordings": 5
+  },
+  "webXRValidation": {
+    "emulator": "IWER 2.1.1 / Meta Quest 3",
+    "eyes": 2,
+    "controllers": 2,
+    "moveStartZ": 0.8500000238418579,
+    "moveEndZ": 1.066000017642975,
+    "externalRequests": 0,
+    "pageErrors": 0,
+    "exitCamera": "First person",
+    "physicalHeadsetTested": false
+  },
+  "validationV2_5_99": {
+    "browserChecks": 19,
+    "voiceUnitChecks": 13,
+    "moduleFiles": 35,
+    "moduleEdges": 27,
+    "missingDependencies": 0,
+    "webXRChecks": 7,
+    "physicalHeadsetTested": false
+  }
+}

@@ -1,0 +1,10 @@
+// Keep playback positions in this open session only, independently for every recording.
+export function remember90(owner,media,key){if(!key||!media)return;owner.speechBookmarks90??=new Map;const time=Number(media.currentTime);if(Number.isFinite(time))owner.speechBookmarks90.set(key,media.ended?0:time);}
+export function restore90(owner,media,key){const time=owner.speechBookmarks90?.get(key)??0;if(!(time>0))return;const source=media.getAttribute?.('src')??media.src;const seek=()=>{if((media.getAttribute?.('src')??media.src)!==source)return;try{media.currentTime=time;}catch{}};seek();if(!media.readyState)media.addEventListener('loadedmetadata',seek,{once:true});}
+export function installSpeechPause90(Speech){
+ Speech.prototype.pause=function(reason='distance'){this.pauseReasons90??=new Set;this.pauseReasons90.add(reason);if(this.media&&['playing','loading','paused'].includes(this.state)){this.media.pause();if(this.state!=='loading')this.state='paused';this.message='گفتگو مکث شده؛ با نزدیک شدن از همین نقطه ادامه می‌یابد.';}};
+ Speech.prototype.resume=function(reason='distance'){this.pauseReasons90?.delete(reason);if(this.pauseReasons90?.size||this.disposed||!this.media||this.state!=='paused'||this.resumeRequest90)return;const media=this.media;this.resumeRequest90=Promise.resolve().then(()=>media.play()).then(()=>{if(this.media!==media||this.disposed||this.pauseReasons90?.size){media.pause();return;}this.state='playing';this.message='کارشناس برقتو در حال صحبت است.';}).catch(()=>{if(this.media===media){this.state='paused';this.message='برای ادامه گفتگو روی صحبت بزنید.';}}).finally(()=>this.resumeRequest90=null);return this.resumeRequest90;};
+ const start=Speech.prototype.start,stop=Speech.prototype.stop;
+ Speech.prototype.start=async function(){if(this.state==='paused'){return this.resume('distance');}await start.call(this);if(this.pauseReasons90?.size&&this.media)this.pause([...this.pauseReasons90][0]);};
+ Speech.prototype.stop=function(){stop.call(this);this.pauseReasons90?.clear();};
+}

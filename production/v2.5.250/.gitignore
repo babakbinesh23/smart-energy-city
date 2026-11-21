@@ -1,0 +1,10 @@
+game/dist/assets/index-2.5.250.js
+office/source-v22.html
+office/xr-babylon-8.46.2.js
+portable-data/
+**/portable-data/
+*.glb
+*.mp3
+*.mp4
+*.woff2
+.env

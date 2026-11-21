@@ -1,0 +1,17 @@
+{
+  "sourceArtifact": "Bargheto-Office-Three-Floors.html",
+  "officeDesignVersion": "50.37.112",
+  "savedLayoutVersion": 174,
+  "glbSha256": "58ac7e4583504090ca1db90e25da7c3674808ebf960e8d7bc764e93c7e1ecd73",
+  "embeddedSourceCredits": [],
+  "note": "The supplied office GLB is reused unchanged; its embedded metadata and attribution are retained. Runtime mesh batching does not alter the source file.",
+  "snapshotVersion": "50.37.112",
+  "sourcePage": "https://www.bodara.ir/babylon-office/",
+  "originalRuntimeGeometry": true,
+  "sevenLevels": true,
+  "nativePlacedModels": 14,
+  "nativeCopies": 9,
+  "sha256": "2413ab2ef6ab516e70ab80c0a748a210696fcebe581319f4f8c832ea6a751028",
+  "dynamicElevatorDisplayTextures": "base material; floor navigation uses native XR menu",
+  "futureLayoutEdits": "snapshot of layout 174; subsequent changes require a refreshed model"
+}

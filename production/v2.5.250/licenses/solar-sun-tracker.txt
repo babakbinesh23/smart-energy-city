@@ -1,0 +1,8 @@
+Solar Panel Sun Tracker | High Quality
+User-supplied model: solar_panel_sun_tracker__high_quality.glb
+Author (embedded metadata): LoutishFlea4668 (https://sketchfab.com/LoutishFlea4668)
+Source: https://sketchfab.com/3d-models/solar-panel-sun-tracker-high-quality-0892936d45ca48d4b3cdaf533c3373ee
+Embedded license: SKETCHFAB Standard (https://sketchfab.com/licenses)
+Original GLB and licensing metadata retained. Runtime changes: two shared-resource placements, parked pose, yaw/tilt movement toward the scene sun, local LCD controls and observer views.
+
+2.5.208: color/logo maps preserved; auxiliary normal/roughness maps resized from 512 to 256 pixels. Geometry and animation bytes preserved.

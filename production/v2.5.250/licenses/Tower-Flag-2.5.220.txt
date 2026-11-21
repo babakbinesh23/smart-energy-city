@@ -1,0 +1,3 @@
+Bargheto brand artwork supplied by the user in image(20261104-144719).png.
+The 512px texture is a resolution derivative of the same supplied original, preserving the complete artwork.
+Flag layout, shader deformation, mesh and fittings created for this project. No external art or fonts added.

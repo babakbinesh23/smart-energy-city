@@ -1,0 +1,7 @@
+Animated Wind Turbine
+Author: Glowbox 3D (https://sketchfab.com/ra3id)
+Source: https://sketchfab.com/3d-models/animated-wind-turbine-e0678e6615a74ed29c1376a591262159
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+User-supplied original: animated_wind_turbine.glb
+Changes in Bargheto 2.5.206: embedded textures resized to 1024/512 pixels and base color re-encoded as JPEG; geometry and source animation unchanged. Three instanced placements, foundations and cable flow added by Bargheto.

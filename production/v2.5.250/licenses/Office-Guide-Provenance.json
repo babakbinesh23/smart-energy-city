@@ -1,0 +1,13 @@
+{
+  "sourcePage": "https://www.bodara.ir/babylon-office/",
+  "originalGuideSource": "src/world/EricGuide.js?v=50.37.109",
+  "avatarSource": "assets/male_avatar.glb",
+  "avatarSha256": "ae4eead5530664e461b78611286b9afe3486286e8846d42eabdc3de5ac142b20",
+  "avatarBytes": 2480072,
+  "heightMetres": 1.8,
+  "liveCatalog": "babylon-office/v1/guide-audio",
+  "departmentZones": 19,
+  "recordingsAvailableAtVerification": 5,
+  "floor3AvatarHiddenAsInOriginal": true,
+  "notes": "Original Eric avatar bytes retained. Department audio is streamed from the live office catalog; absent audio slots are shown honestly. No recording substitutions."
+}

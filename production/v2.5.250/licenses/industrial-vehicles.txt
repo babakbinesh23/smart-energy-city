@@ -1,0 +1,22 @@
+The following supplied Sketchfab models are licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+Modifications for Bargheto: baked metric transforms, preserved original geometry/materials, split wheel objects, removed display base from excavator, compacted geometry, WebP textures up to 1024px. No manufacturer engineering certification is implied.
+
+Jungheinrich Forklift — aardque
+https://sketchfab.com/3d-models/jungheinrich-forklift-d659c366e24643f0b72ad0fe1ef1a60b
+
+Forklift — FFeller
+https://sketchfab.com/3d-models/forklift-f550f917394449578f5930a46512f169
+
+Truck — ROY
+https://sketchfab.com/3d-models/truck-eda924f23ba04cd5b1e5160abf2320fa
+
+Construction truck (tracked excavator) — Montassar-f
+https://sketchfab.com/3d-models/construction-truck-c573303be1f04e0c94cfa245c2f2ddcf
+
+Engine and horn sounds are generated locally using Web Audio synthesis; no external sound recordings are included.
+
+A Chinese Worker — UsmanKhalid51
+https://sketchfab.com/3d-models/a-chinese-worker-4d06ba24009349bc824ccd3f756c4444
+CC BY 4.0. Original geometry and textures retained; metric scale and grounded placement applied. No skeletal animation exists in this supplied scan.
+
+V2.5.30: At runtime, the Chinese worker scan receives a smooth local rest-pose deformation of the shoulder/arm region. Original GLB bytes, texture UVs and images are unchanged; head, legs, height and placement are retained.

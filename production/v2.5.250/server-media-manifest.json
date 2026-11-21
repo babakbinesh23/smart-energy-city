@@ -1,0 +1,178 @@
+{
+  "bundled/bargheto-expert-ZtAJ92tC.glb": {
+    "size": 14485552,
+    "sha256": "9d3a1e222181f209c3c887441e9e19ccf2674d2344947eeef7bbbe8511cc0a17"
+  },
+  "bundled/solar-bess-lcd-BRwp9FdO.glb": {
+    "size": 1419772,
+    "sha256": "6b350f2805dc14a1b1fd8e544a4bd018e5b8af7724fa2ae73218ba72f0933546"
+  },
+  "bundled/expert-dialogue-DB3VisWh.mp3": {
+    "size": 1285861,
+    "sha256": "b90e9a10c9eefcdd30a00630a19afafd08b2d880c70505b74d7ae770fa71fd04"
+  },
+  "bundled/chinese-workers-2.5.86.mp3": {
+    "size": 338547,
+    "sha256": "84ba2ac71d0788621683cdee7c20228b643a92f6be4f9ce3c9bffa2eea8005ec"
+  },
+  "bundled/worker-apl-driver-DvPEj07R.glb": {
+    "size": 1696700,
+    "sha256": "45fa39af0fb7f11d8b30ad0557e48417e44d3baa1a441e955338a9a6d427938f"
+  },
+  "bundled/construction_truck-DR0MItpb.glb": {
+    "size": 3968748,
+    "sha256": "a023fcffb982df36dd9084ec331dcc92aaa72070fce969932782533165b208d8"
+  },
+  "bundled/truck-phik1s5g.glb": {
+    "size": 1097500,
+    "sha256": "9a05bb04066324f3113b2d65bcac5852eb9a5b13abafcce7dfc0d8bbaaea8210"
+  },
+  "bundled/a_chinese_worker-DoKVIEKs.glb": {
+    "size": 1203348,
+    "sha256": "ce0b8c7f726daa25f9bcfae06f635ccc340d4296ebc7a8ce4b05f675f440b232"
+  },
+  "bundled/expert-saving-2.5.96.mp3": {
+    "size": 685915,
+    "sha256": "7c531414a06678edae5921d367dfb5554b9e4bae2f74269bbef4a4354dc3bf4b"
+  },
+  "bundled/male-avatar-CCes6A5L.glb": {
+    "size": 1999316,
+    "sha256": "ca624e92368615b2695da474568f72d780718c5ac7c80c6c571d0e950445f17c"
+  },
+  "bundled/solar-expert-2.5.107.mp3": {
+    "size": 1396202,
+    "sha256": "8be3137d6f0878fbd0727ca8cc384bcfbe645e40ddafad64d41122920d1db3a4"
+  },
+  "bundled/jungheinrich_forklift-DbbXIgQA.glb": {
+    "size": 368264,
+    "sha256": "dd331eab040e7fcd4146eaf5276027012201b82e1812801c52f5e022252a60b2"
+  },
+  "bundled/forklift-B23YRlUA.glb": {
+    "size": 688660,
+    "sha256": "745e012e11c9a945ec358b536e78dbc49b7723b60eb3fe1bd5b2f74b046d4bce"
+  },
+  "bundled/expert-cooler-2.5.96.mp3": {
+    "size": 1434062,
+    "sha256": "e567e4749f0d079ca711a44ac4dd944e502ac7cc58ba6d0e66ea277eb8ee16ed"
+  },
+  "bundled/green-aggregation-expert-2.5.108.mp3": {
+    "size": 1641962,
+    "sha256": "efda91f487cee5c2de077e50f41a846d9d7c4bb8888282140e723fd682353ab4"
+  },
+  "office/office.glb": {
+    "size": 20852028,
+    "sha256": "24c2d100162997fb9e8b20d09bf03d3f5eaa9d40362a69614f0d417c05c9c5ca"
+  },
+  "office/eric.glb": {
+    "size": 2611188,
+    "sha256": "01aa3b094d392227af78f207ca5504319daa6f682176580a072d640ea6fe8dd1"
+  },
+  "office/elevator.glb": {
+    "size": 639716,
+    "sha256": "c756ee4b6dbd16efaad012ba243b06c682eaa84855cff3d445c6bfe14d5ebd9f"
+  },
+  "office/voice-eric.mp3": {
+    "size": 587998,
+    "sha256": "80fb3f88cc6e35de9216a3b929a98ef767991f19ac316969cd9d430f3b094ca3"
+  },
+  "office/voice-department-0.mp3": {
+    "size": 338476,
+    "sha256": "b708edcb40921a8d0eae3c29c7b058c07613417d06ef14f5f4ccf7a3112e011c"
+  },
+  "office/voice-department-3.mp3": {
+    "size": 647220,
+    "sha256": "eb50f2cc4cfce5dc654c14e8f0820fa51c1a77bc0e88ca6296d05a5c496bc9d7"
+  },
+  "office/voice-department-2.mp3": {
+    "size": 439622,
+    "sha256": "1aeb561ec3fb3d2d4ce3fbf434810ba2ff619be105a5c3a2235881d569e9ffde"
+  },
+  "office/voice-department-5.mp3": {
+    "size": 392393,
+    "sha256": "f9881b669fd9ef1a6bc64c69f799432266b57ed4613818944a253183ec77b976"
+  },
+  "office/television.mp4": {
+    "size": 5459276,
+    "sha256": "bc2247db5ffba5ad0d975d5ee1aeea2a51d886ac9e5b20f2df706be8b461dacf"
+  },
+  "bundled/generic-factory-2.5.197.glb": {
+    "size": 6458588,
+    "sha256": "615e9528dbe813aae8634c345c2ebc7d690982eb2d32cee1b214e707b9ee47b8"
+  },
+  "bundled/wind-turbine-2.5.206.glb": {
+    "size": 438828,
+    "sha256": "94bbcb7c74aebdcb497f203464db8188afcbcc68f59eb63211a8dd556104f810"
+  },
+  "bundled/sun-tracker-2.5.208.glb": {
+    "size": 946960,
+    "sha256": "a7a75d8ec025f32145d2ef7fb0723099471f4c1b3fd55e2c70f19b2ff2505dbd"
+  },
+  "bundled/tracker-motor-2.5.210.mp3": {
+    "size": 94293,
+    "sha256": "9e5602e73a58680523299e8c621ea3828bbc52a98e18dc637c89847965b6bf0f"
+  },
+  "bundled/wind-turbines-2.5.213.mp3": {
+    "size": 327213,
+    "sha256": "cdbc7ba4d1d390974df2358c345eba183c04b63b3cd257701191ac3c60bca3e5"
+  },
+  "bundled/truck-livery-reference-2.5.216.png": {
+    "size": 3484993,
+    "sha256": "642bdbb2d7dfbd96cbc98774823bfd14d3972a5cba8f8ebb511f5a02125d4cba"
+  },
+  "bundled/forklift-forklift-white-2.5.219.png": {
+    "size": 1253852,
+    "sha256": "d112b78d061754cceaa697baea7ea1d36f0473de5eb8cac0fcbe04e5e8359c28"
+  },
+  "bundled/electricity-after-zKWnFKuO.webp": {
+    "size": 242104,
+    "sha256": "63768f78c7cc16ab0bcd2770e5076c95ff1847fb6a03eae6dc5d1061e0126aba"
+  },
+  "bundled/bargheto-logo-reference-2.5.218.png": {
+    "size": 138078,
+    "sha256": "5ab184e1d23beac83bb44332a62d961eee01090c26fb1e72dc04cb5facfbcced"
+  },
+  "bundled/forklift-reference-white-2.5.219.png": {
+    "size": 3115626,
+    "sha256": "d4c84efe59b52d0c8fcb308ef16c46bd1f48cbc823746f99c26267fb01355f66"
+  },
+  "bundled/bargheto-logo-xleaNlBS.svg": {
+    "size": 39965,
+    "sha256": "76b12dddee0758b652955c4a1c4d9f2959adf9c0fd5b7adaebc2729762b59091"
+  },
+  "bundled/forklift-jungheinrich_forklift-white-2.5.219.png": {
+    "size": 392661,
+    "sha256": "401e2b05865d07aef50007eff9b26015e6a511e3735bf712b2b96bf39251e4b7"
+  },
+  "bundled/tower-flag-logo-2.5.220.png": {
+    "size": 52018,
+    "sha256": "bb484ee20206e9943880d04b39829ec6578b70ad6e4816b2c9917e80717c2c9d"
+  },
+  "bundled/forklift-forklift-gold-2.5.219.png": {
+    "size": 1248497,
+    "sha256": "865e8f6d6ee7dc4ecdb87a4b347f07dc114fc96a5ffb8a82422291efe3418812"
+  },
+  "bundled/forklift-jungheinrich_forklift-gold-2.5.219.png": {
+    "size": 392341,
+    "sha256": "f068f515a151ecb287c8016554361981d39934b5bc886b0fdfcd5a749d7ddb40"
+  },
+  "bundled/bess-dashboard-reference-BcR_Fsv7.png": {
+    "size": 271548,
+    "sha256": "21cc15f2baf9095841fe2ae3813876109090cfdeea30ca3816e1c36a70b5d48c"
+  },
+  "bundled/city-map-2.5.123.webp": {
+    "size": 484092,
+    "sha256": "dbf0f055a49f3151ecbb625655cab74779d2af1492b8b57c255f70566392b5b3"
+  },
+  "bundled/bess-door-logo-DKmCcAwQ.png": {
+    "size": 27043,
+    "sha256": "797942fd09513287b6799ad1f35021011cf23d386412719c6b09a496a78a7c06"
+  },
+  "bundled/electricity-before-B3aug3-F.webp": {
+    "size": 243066,
+    "sha256": "9d8b352f2d8bf26d405c106c011b9d59d21560343e5a680c4f98de85d4ddb146"
+  },
+  "bundled/forklift-reference-gold-2.5.219.png": {
+    "size": 3039048,
+    "sha256": "0fbe2fec01ac4df963e591c7da872856f7200b16139ba2a5242f1da82c9f7194"
+  }
+}

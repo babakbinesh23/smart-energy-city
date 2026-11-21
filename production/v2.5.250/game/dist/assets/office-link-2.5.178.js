@@ -1,0 +1,59 @@
+import {installOfficeContinuity119} from './office-continuity-2.5.138.js';
+import {installOfficeAssets128} from './office-assets-2.5.136.js';
+import '../../../office/cache-2.5.113.js';
+import '../../../office/loading-2.5.99.js';
+export function createNativeOffice97(scene,group,exitBounds){const noop=()=>{},canvas=document.createElement('canvas');canvas.width=1024;canvas.height=256;group.name='bargheto-native-office-link-v22';group.visible=false;const guide={media:document.createElement('audio'),canvas,texture:{needsUpdate:false},current:null,status:'دفتر مستقل',active:false,suspended:true,blocked:false,select:()=>false,rayDistance:()=>null,draw:noop,tryPlay:noop,stop:noop,playTopic:noop,startIntro:noop,pauseMedia90:noop,setSuspended:noop,unlock:noop,update:noop,dispose:noop};return{ready:true,active:false,floor:1,error:'',group,exitBounds,guide,prepare:async()=>{},update:noop,dispose:noop};}
+export class OfficeSession99{
+ constructor(parent,seed,game){this.parent=parent;this.seed=seed;this.game=game;this.frame=null;this.panel=null;this.cached=null;this.ready=false;this.timeout=0;this.token='';this.onSuspend=null;this.onResume=null;this.receive=e=>this.onMessage(e);window.addEventListener('message',this.receive);}
+ get active(){return !!this.frame;}
+ canReuse(url){
+  const c=this.cached;if(!c||this.game?.vr.active||c.source!==url.href||!c.frame.isConnected)return false;
+  try{const child=c.frame.contentWindow,debug=child?.officeDebug;
+   return !!(child?.Office97?.suspendWeb99&&child?.Office97?.connectCity119&&debug?.ready&&!debug.engine?._gl?.isContextLost?.());
+  }catch{return false;}
+ }
+ evictCached(){const c=this.cached;this.cached=null;if(!c)return;try{c.frame.contentWindow?.__BABYLON_OFFICE__?.dispose?.();}catch{}c.panel.remove();}
+ open(value){
+  const url=new URL(value,location.href);if(this.active||url.origin!==location.origin||!/^https?:$/.test(url.protocol))return false;
+  if(this.canReuse(url)){
+   const c=this.cached;this.cached=null;this.frame=c.frame;this.panel=c.panel;this.token=c.token;this.origin=c.origin;this.target=c.target;this.source=c.source;this.ready=true;this.loading=null;
+   try{
+    this.game?.touch?.update(0,false,false);this.onSuspend?.();
+    c.panel.inert=false;c.panel.removeAttribute('aria-hidden');c.panel.style.visibility='visible';c.panel.style.pointerEvents='auto';c.frame.style.visibility='visible';
+    if(this.continuity119)void this.continuity119.connect().catch(error=>console.error('Office warm return',error));
+    else c.frame.contentWindow.Office97.activateWarm127();
+    c.frame.focus();return true;
+   }catch(error){console.error('Office warm return',error);this.close(false);this.onResume?.(false);return false;}
+  }
+  this.evictCached();this.token=Array.from(crypto.getRandomValues(new Uint8Array(16)),x=>x.toString(16).padStart(2,'0')).join('');
+  this.source=url.href;url.searchParams.delete('office-admin');url.searchParams.set('city-embed','1');if(this.game?.vr.active)url.searchParams.set('city-xr','1');url.searchParams.set('city-host',this.token);
+  this.origin=url.origin;this.target=url.href;this.ready=false;
+  const panel=this.panel=document.createElement('section');panel.className='office-session';panel.dir='rtl';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','ساختمان برقتو');
+  const frame=this.frame=document.createElement('iframe');frame.title='ساختمان برقتو';frame.className='office-session-frame';frame.allow='autoplay; fullscreen; gamepad; xr-spatial-tracking';frame.allowFullscreen=true;frame.setAttribute('sandbox','allow-scripts allow-same-origin allow-forms allow-pointer-lock');frame.style.visibility='hidden';panel.append(frame);
+  try{this.game?.touch?.update(0,false,false);this.onSuspend?.();this.parent.append(panel);this.loading=BarghetoLoading99.create({parent:panel,template:this.game?.overlay?.loading,onBack:()=>this.close()});this.armTimeout();if(this.game?.vr.active)void this.game.prefetchOffice99?.();
+   if(this.game?.vr.active&&this.continuity119?.startLoading133){
+    const token133=this.token;void this.continuity119.startLoading133().then(()=>{if(this.frame===frame&&this.token===token133)frame.src=this.target;}).catch(error=>{if(this.frame===frame){console.error('Office VR loading screen',error);this.close();}});
+   }else frame.src=this.target;
+   return true;
+  }catch(error){console.error('Office entry',error);this.close();return false;}
+ }
+ armTimeout(){clearTimeout(this.timeout);this.timeout=setTimeout(()=>{if(this.active&&!this.ready)this.loading?.error('آماده‌سازی ساختمان طول کشیده؛ می‌توانید دوباره تلاش کنید.',()=>this.retry());},120000);}
+ retry(){if(!this.frame)return;this.loading?.remove();this.loading=BarghetoLoading99.create({parent:this.panel,template:this.game?.overlay?.loading,onBack:()=>this.close()});this.frame.style.visibility='hidden';this.armTimeout();this.frame.src=this.target;}
+ onMessage(e){if(!this.frame||e.origin!==this.origin||e.source!==this.frame.contentWindow)return;const d=e.data;if(!d||d.protocol!==1||d.token!==this.token)return;if(d.type==='bargheto-office-progress'&&(!this.ready||this.game?.vr.active&&this.continuity119?.mode==='attaching')){this.armTimeout();this.loading?.update(d.ratio,d.label);this.continuity119?.progress(d.label,d.ratio);}else if(d.type==='bargheto-office-error'&&!this.ready){clearTimeout(this.timeout);this.loading?.error(String(d.message||'ساختمان آماده نشد.'),()=>this.retry());this.continuity119?.progress('ساختمان آماده نشد؛ برای بازگشت B را بزنید',0);}else if(d.type==='bargheto-office-ready'&&!this.ready){this.ready=true;clearTimeout(this.timeout);this.frame.style.visibility=this.game?.vr.active&&this.continuity119?'hidden':'visible';if(!this.continuity119){this.loading?.remove();this.loading=null;}else void this.continuity119.connect().catch(error=>console.error('Office connection',error));this.frame.contentWindow.postMessage({type:'bargheto-city-retained',protocol:1,token:this.token},this.origin);if(!this.game?.vr.active||!this.continuity119)this.frame.focus();}else if(d.type==='bargheto-office-exit')this.close();else if(d.type==='bargheto-office-destination'&&(typeof d.id==='string'||d.point))this.continuity119?.destination?.(d.id,d.point);}
+ close(resume=true){
+  if(!this.frame)return;const frame=this.frame,panel=this.panel,wasReady=this.ready,token=this.token,origin=this.origin,target=this.target,source=this.source;
+  this.frame=null;this.panel=null;this.ready=false;this.token='';this.loading?.remove();this.loading=null;clearTimeout(this.timeout);
+  let keep=!!(resume&&wasReady&&!this.game?.vr.active&&frame.isConnected);
+  try{keep=keep&&frame.contentWindow?.Office97?.suspendWeb99?.()===true;}catch(error){console.warn('Office standby unavailable',error);keep=false;}
+  if(keep){panel.inert=true;panel.setAttribute('aria-hidden','true');panel.style.visibility='hidden';panel.style.pointerEvents='none';this.cached={frame,panel,token,origin,target,source};}
+  else{try{frame.contentWindow?.__BABYLON_OFFICE__?.dispose?.();}catch{}frame.remove();panel.remove();}
+  try{const saved=JSON.parse(sessionStorage.getItem('bargheto-office-trip-v1')||'null');if(saved?.version===1&&saved.seed===this.seed)sessionStorage.removeItem('bargheto-office-trip-v1');}catch{}
+  if(resume)this.onResume?.(wasReady);
+ }
+ dispose(){this.close(false);this.evictCached();window.removeEventListener('message',this.receive);this.onSuspend=this.onResume=null;}
+}
+export function installNativeOffice97(game,T){
+ const xrAssets=installOfficeAssets128(game);
+ game.prefetchOffice99=()=>xrAssets.prefetch();
+ installOfficeContinuity119(game,T);
+}

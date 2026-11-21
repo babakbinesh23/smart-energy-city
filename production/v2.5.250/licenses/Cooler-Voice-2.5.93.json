@@ -1,0 +1,39 @@
+{
+  "version": "2.5.93",
+  "recording": "cooler-expert-2.5.93.mp3",
+  "source": "User-supplied ElevenLabs recording, 2026-10-31",
+  "sha256": "f6e801727527d33a0bb34d3cbfef416e9da9a59e0d59682939aaef1c152ddcf4",
+  "duration_seconds": 134.269375,
+  "clock": "HTMLMediaElement.currentTime; playbackRate-independent cue positions",
+  "visual_cues_seconds": {
+    "speech_only": [
+      0,
+      43.08
+    ],
+    "two_coolers": [
+      43.08,
+      59.48
+    ],
+    "motor_electricity": [
+      59.48,
+      74.06
+    ],
+    "speed_control": [
+      74.06,
+      91.02
+    ],
+    "noise_and_vibration": [
+      91.02,
+      109.04
+    ],
+    "maintenance": [
+      109.04,
+      123.06
+    ],
+    "recap": [
+      123.06,
+      134.269375
+    ]
+  },
+  "scope": "Illustrative maximum motor savings; not a measurement of these units or a promise about the whole electricity bill."
+}

@@ -1,0 +1,7 @@
+Imported BESS subset supplied by the user in Island2-0.0.450-FULL-20261029-170635.zip.
+Source: assets/island-game.module.js BESS-only geometry, canvas, charts, dashboard, model; includes/bess-engine.php.
+Assets: full-backup-assets/models/gart230_-_diagnostics_screen.glb,
+assets/bess-dashboard-reference.png, assets/bargheto-bess-door-logo.png.
+No Island2 bootstrap, historical backups, tracker geometry, or unrelated runtime is included.
+City adaptation: fixed-array educational sample; room-authenticated WordPress persistence; desktop/mobile/XR interactions, stationary XR panel and disposal.
+Original upstream model creator/license: no separate model license was identified in the supplied archive; original metadata retained in GLB.

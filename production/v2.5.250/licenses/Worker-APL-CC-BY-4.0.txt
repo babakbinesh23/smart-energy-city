@@ -1,0 +1,8 @@
+Worker apl
+Author: max_f5_studio (https://sketchfab.com/max_f5_studio)
+Source: https://sketchfab.com/3d-models/worker-apl-89149ed089da470eb892e1c9100cc780
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+User-supplied original: worker_apl (1).glb, 6,001,876 bytes.
+Original SHA256: 855c5fcec72737e1f4856780f66b52033be27fedcc7226dd6d2ad870422ac6dc
+V2.5.44 changes: metric normalization, added 52 skeletal joints, anatomical skin weights and mesh-neighbor smoothing, modest body geometry simplification and vertex quantization, resized/reencoded auxiliary textures, retained both mesh parts and materials and original source attribution, runtime seated leg/arm/palm/finger poses for two forklift models. Original supplied file is not modified. Derived game GLB: 1,696,700 bytes.

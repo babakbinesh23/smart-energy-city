@@ -1,0 +1,23 @@
+export async function enterVisitor114(){
+ const endpoint=window.barghetoMultiplayer?.endpoint;if(endpoint){const response=await fetch(endpoint,{method:'POST',credentials:'same-origin',cache:'no-store',headers:{'X-Bargheto-Request':'city'},body:new URLSearchParams({action:'bargheto_city_admin_session',op:'logout'})});const result=await response.json();if(!response.ok||!result.success)throw Error('ورود با دسترسی کاربر عادی انجام نشد؛ دوباره تلاش کنید.');}
+ window.barghetoGuest114=true;window.barghetoCityAdminEntry=false;window.dispatchEvent(new Event('bargheto:guest-entry114'));
+}
+export function installAccess114(game){
+ const mp=game.multiplayer,editor=game.editor,style=document.createElement('style');
+ style.textContent='html[data-city-guest114] .world-editor,html[data-city-guest114] .flight-toggle,html[data-city-guest114] .flight-hint,html[data-city-guest114] .performance-capture{display:none!important}.city-quick-actions>.city-overview-button{position:static!important;inset:auto!important;margin:0;font-size:11px}.city-full114{position:absolute;inset:0;z-index:1000;display:grid;place-items:center;background:#081720dd;direction:rtl;color:#effff8;font:16px/1.9 Vazirmatn,Tahoma,sans-serif;padding:20px}.city-full114[hidden]{display:none!important}.city-full114 section{max-width:440px;background:#122d37;border:1px solid #8ac6b7;border-radius:20px;padding:28px;text-align:center}.city-full114 button{padding:10px 20px;background:#285847;color:inherit;border:1px solid #9dcab8;border-radius:10px;font:inherit;cursor:pointer}.city-full114 h2{font-size:23px;margin:0 0 12px}';document.head.append(style);
+ const setAdmin=mp.setAdmin;mp.setAdmin=function(value){setAdmin.call(this,window.barghetoGuest114?false:value);apply();};
+ const available=editor.setAvailable;editor.setAvailable=function(value){return available.call(this,value&&mp.isAdmin);};
+ const recordAvailable=game.performanceControl.setAvailable;game.performanceControl.setAvailable=function(value){return recordAvailable.call(this,value&&mp.isAdmin);};
+ if(game.cinematic.replay.parentElement===game.flightControl.element)(game.renderer.canvas.parentElement.querySelector('.city-quick-actions')||game.renderer.canvas.parentElement).append(game.cinematic.replay);
+ function apply(){const guest=!mp.isAdmin;document.documentElement.toggleAttribute('data-city-guest114',guest);if(guest){editor.setAvailable(false);editor.element.hidden=true;game.performanceControl.setAvailable(false);if(game.player.controller.flying)game.player.controller.setFlying(false);game.input.captureOnDrag=false;game.flightControl.setFlying(false);game.hud.setFlying(false);if(/برای بعضی اینترنت|مدیر سرور|تنظیم سرویس/.test(mp.notice.textContent))mp.notice.textContent='';}game.refreshAdminFlight();}
+ const guest=()=>{mp.setAdmin(false);editor.store.canSave=false;apply();};window.addEventListener('bargheto:guest-entry114',guest);apply();
+ const join=mp.join.bind(mp);let joining=null;
+ mp.join=()=>{if(mp.joined)return Promise.resolve(true);if(joining)return joining;joining=join().then(()=>{if(mp.joined){full.hidden=true;if(waiting){waiting=false;game.resume();}return true;}if(mp.full114)showFull();return false;}).finally(()=>joining=null);return joining;};
+ const full=document.createElement('div');full.className='city-full114';full.hidden=true;full.innerHTML='<section role="alertdialog" aria-modal="true" aria-labelledby="city-full-title114"><h2 id="city-full-title114">سرور پر شده</h2><p>ظرفیت بازی ۱۰ نفر است. لطفاً بعداً دوباره امتحان کنید.</p><button type="button">تلاش دوباره</button></section>';game.renderer.canvas.parentElement.append(full);let waiting=false;
+ function showFull(){waiting=true;game.paused=true;game.input.clear();game.input.exitPointerLock();game.city.updateAudio(game.camera.camera,true);if(game.vr.active){game.vr.message='سرور پر شده؛ لطفاً بعداً امتحان کنید.';game.vr.showMenu();}else{full.hidden=false;full.querySelector('button').focus();}}
+ const retry=full.querySelector('button');retry.onclick=async()=>{retry.disabled=true;retry.textContent='بررسی ظرفیت…';await mp.join();retry.disabled=false;retry.textContent='تلاش دوباره';};
+ const onFull=()=>showFull();mp.element.addEventListener('city-full114',onFull);
+ const resume=game.resume;game.resume=function(...args){if(waiting&&!mp.joined)return;return resume.apply(this,args);};
+ game.disposers.push(()=>{style.remove();full.remove();window.removeEventListener('bargheto:guest-entry114',guest);mp.element.removeEventListener('city-full114',onFull);document.documentElement.removeAttribute('data-city-guest114');});
+ return {apply,full,get waiting(){return waiting;}};
+}

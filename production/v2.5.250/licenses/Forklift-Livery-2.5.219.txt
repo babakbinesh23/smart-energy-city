@@ -1,0 +1,10 @@
+User supplied both Bargheto forklift photographs for this project.
+Original PNGs preserved byte for byte in game/dist/assets/forklift-reference-{gold,white}-2.5.219.png.
+Body and mast artwork samples the original pixels, including Persian and Latin lettering.
+Source vehicle meshes retain the credits in industrial-vehicles.txt.
+Paint atlas maps are derived from the existing licensed source textures and user-supplied color schemes.
+No external images, fonts or artwork added.
+{
+  "gold": "0fbe2fec01ac4df963e591c7da872856f7200b16139ba2a5242f1da82c9f7194",
+  "white": "d4c84efe59b52d0c8fcb308ef16c46bd1f48cbc823746f99c26267fb01355f66"
+}

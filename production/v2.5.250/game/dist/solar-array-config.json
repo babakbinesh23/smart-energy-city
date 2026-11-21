@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "moduleWatts": 620,
+  "moduleCount": 146,
+  "bankCounts": [
+    57,
+    57,
+    32
+  ],
+  "peakKw": 90.52,
+  "tiltRadians": 0.24,
+  "sunElevationDegrees": 75,
+  "batteryCapacityKwh": 12,
+  "batteryConverterKw": 2
+}

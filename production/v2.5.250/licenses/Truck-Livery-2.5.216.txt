@@ -1,0 +1,6 @@
+Truck geometry: original truck-phik1s5g.glb; author and CC-BY-4.0 attribution
+remain in industrial-vehicles.txt and the source model metadata.
+Livery source: user-supplied image(20261104-133312).png, 1448 x 1086 pixels.
+The full original PNG is copied byte-for-byte to truck-livery-reference-2.5.216.png.
+Cargo artwork and cab badge/stripe are sampled from that reference via UVs.
+No external authorship or licence terms inferred for the supplied picture.

@@ -1,0 +1,63 @@
+{
+  "version": "2.5.96",
+  "source_audio_sha256": "f6e801727527d33a0bb34d3cbfef416e9da9a59e0d59682939aaef1c152ddcf4",
+  "source_recording": "user-provided ElevenLabs recording of 2026-10-31",
+  "clips": [
+    {
+      "file": "expert-saving-2.5.96.mp3",
+      "source_start": 0,
+      "source_end": 42.8,
+      "encoded_duration": 42.840816,
+      "sha256": "7c531414a06678edae5921d367dfb5554b9e4bae2f74269bbef4a4354dc3bf4b"
+    },
+    {
+      "file": "expert-cooler-2.5.96.mp3",
+      "source_start": 44.72,
+      "source_end": 134.269375,
+      "encoded_duration": 89.6,
+      "sha256": "e567e4749f0d079ca711a44ac4dd944e502ac7cc58ba6d0e66ea277eb8ee16ed"
+    }
+  ],
+  "omitted_bridge_seconds": [
+    42.8,
+    44.72
+  ],
+  "cooler_opening": "اینجا دو کولر آبی داریم",
+  "cooler_camera_cues_relative_seconds": [
+    {
+      "at": 0.0,
+      "shot": "pair"
+    },
+    {
+      "at": 2.48,
+      "shot": "standard"
+    },
+    {
+      "at": 5.44,
+      "shot": "bldc"
+    },
+    {
+      "at": 32.09,
+      "shot": "standard"
+    },
+    {
+      "at": 36.62,
+      "shot": "bldc"
+    },
+    {
+      "at": 56.78,
+      "shot": "pair"
+    },
+    {
+      "at": 67.34,
+      "shot": "bldc"
+    },
+    {
+      "at": 73.26,
+      "shot": "pair"
+    }
+  ],
+  "bookmark_scope": "independent per topic in current session",
+  "saving_visuals": "none",
+  "xr": "separate topic choices and user-controlled head tracking"
+}

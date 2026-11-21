@@ -1,44 +1,35 @@
-# Original v2.5.250 Source — Publication Status
+# Actual Smart Energy City v2.5.250 — code-only publication
 
-**Status: PRIVATE REVIEW CANDIDATE. The full production project is NOT public open source.**
+**Status: Public code-only source, not the full deployable production experience.**
 
-## What was examined
+The owner confirmed being the author and having authority to publish the original project code. Based on the user-supplied version 2.5.250 ZIP, a sanitized code-only copy is now in [production/v2.5.250](../production/v2.5.250/README.md).
 
-The owner-provided WordPress ZIP for Bargheto Smart Energy City v2.5.250 contained **826 ZIP entries**, including the plugin's PHP backend, generated JavaScript frontend, separate Babylon office runtime, historical notes, media, and visitor snapshots.
+## Contents verified during preparation
 
-An offline **sanitized, code-only review candidate** has been prepared from the provided archive. It contains **513 code/documentation files** and excludes visitor snapshots and externally sourced 3D/audio/video/image assets. A limited scan found three private IPv4 literals in distributed JS; these were replaced with loopback placeholders *inside the offline candidate*. Its validation completed with **20 PHP syntax checks and 443 JavaScript syntax checks passing**. These checks do not constitute a complete security audit.
+- Original archive: 826 entries, including WordPress PHP, distributed JS, Babylon office runtime, models/media, and saved visitor data.
+- Public code-only directory: 512 source/documentation/license files excluding visitor data, databases, models/media and font binaries.
+- Syntax checks: 20 PHP and 443 JavaScript files passed.
+- Limited known-pattern scan: no remaining recognized hardcoded API keys, Iranian mobile literals or private IP addresses in the prepared files.
+- Fixed hardcoded admin password: public `multiplayer.php` requires configured password hash or WordPress admin login.
+- Three large source files are published as SHA-256-verifiable text fragments and must be reconstructed with `restore-split-files.mjs`.
 
-## Relevant actual architecture
+## Limits
 
-- `bargheto-city.php`: WordPress plugin entry and registration of the `/barghetocity/` route
-- `visitors.php`: WordPress visitor handling code (different from saved visitors' records)
-- `game/dist/index.html`: frontend bootstrapping with versioned startup and main script
-- `game/dist/assets/index-2.5.250.js`: actual large **prebuilt distribution**, not the complete editable original frontend source tree
-- `office/`: office frontend and Babylon-based/XR runtime
-- `multiplayer.php`, `layout-editor.php`, `moderation.php`, `media-manager.php`: WordPress integration modules
-- `portable-data/` inside the original archive: contains saved state and visitor records — excluded from the private code-only candidate and must not be committed
+- This was **not a full penetration test or rights audit for every embedded vendor module**.
+- Some frontend code is a prebuilt distribution rather than its original editable development source with a reproducible lockfile.
+- The original game still depends on WordPress, media, saved layout/configuration and appropriate backend services. GitHub Pages continues to host the separate simple educational reference.
+- The production website has **not** received the security patch automatically. [Important hardening note](SECURITY_HARDENING_FA.md).
+- Original version notes are private historical development evidence, not a record of public Git commits.
+- Third-party attribution/license notices are included; models/audio/fonts were not redistributed.
 
-## Why this cannot simply be published as-is
+## Open work
 
-1. **Source ownership:** authorization is needed from the relevant rights holder for production source, trademarks and brand assets; no MIT license can be assigned to third-party/company code by assumption.
-2. **Privacy:** saved visitor records include phone-number fields, and backed-up application state must not be uploaded.
-3. **Media licensing:** provenance records include CC BY-NC items and media whose redistribution license was not established.
-4. **Build provenance:** the main frontend is a compiled/prebuilt distribution; the supplied ZIP does not establish a reproducible original source build. Publishing the bundle is not equivalent to publishing fully editable source code.
-5. **Runtime:** the product expects WordPress URL injection, AJAX/backend services, saved layouts, model/voice assets, and server configuration. GitHub Pages serves static files and cannot itself run the complete PHP-dependent system.
-6. **Security:** text pattern scans and syntax checks cannot certify the application as secure; WordPress permissions/nonces and stored data require separate review.
-
-## Responsible release plan
-
-- [x] Inspect the exact provided production ZIP, excluding PII and media in an offline review candidate
-- [x] Create a truthful inventory of actual product modules and original archived release notes
-- [x] Preserve separate functioning public educational reference code and its CI
-- [ ] Confirm written production-code ownership/publication rights
-- [ ] Obtain the original editable frontend source and build instructions, or clearly label any released distribution as prebuilt
-- [ ] Independently review WordPress endpoint authorization, secrets and privacy
-- [ ] Create a per-asset redistribution/license manifest
-- [ ] Publish only the authorized, sanitized portion under its true license
-- [ ] Verify deployment and runtime interactions with actual media and backend
-
-**Do not copy the full 194 MiB archive into the public repo.** For questions about a future open-source core, use the GitHub issues to track actual review and approvals.
-
-Current public reference: [Smart Energy City](../README.md). Actual hosted product: https://www.bodara.ir/barghetocity/.
+- [x] Confirm user's authorship and authorization to publish original source code
+- [x] Publish code-only sanitized source with attribution notices
+- [x] Remove one fixed administrator credential in the published copy
+- [x] Provide checksummed restoration script for large source files
+- [ ] Patch and verify the actual WordPress deployment; expire old admin sessions
+- [ ] Audit WordPress authorization, nonces, storage and upload endpoints
+- [ ] Recover the original editable frontend source & reproducible build toolchain
+- [ ] Review each third-party/vendor dependency and media license before releasing media
+- [ ] Collect real public OSS usage and community feedback; never fabricate it

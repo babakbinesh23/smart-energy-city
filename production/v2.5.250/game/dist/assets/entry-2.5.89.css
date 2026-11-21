@@ -1,0 +1,29 @@
+/* Registration, pause and error dialogs own the top layer. Cinematic bars never cover them. */
+.ui-layer[data-screen=loading],.ui-layer[data-screen=start],.ui-layer[data-screen=pause],.ui-layer[data-screen=error]{z-index:200}
+.city-cinematic.is-suspended{visibility:hidden;pointer-events:none}
+.ui-layer .overlay.hidden{visibility:hidden}
+.overlay.visitor-entry{padding:max(12px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));overflow:auto;align-items:center}
+.visitor-card{width:min(490px,100%);max-height:calc(100dvh - 24px);max-height:calc(100dvh - max(12px,env(safe-area-inset-top)) - max(12px,env(safe-area-inset-bottom)));flex:0 0 auto;min-height:0;padding:22px 24px 20px;overscroll-behavior:contain;scrollbar-gutter:stable;scroll-padding:18px;line-height:1.7}
+.visitor-card .brand{display:flex;flex-direction:column;align-items:stretch;gap:5px}
+.visitor-card .brand-title{letter-spacing:0;font-size:clamp(23px,3.2vw,32px);line-height:1.6;text-wrap:balance}
+.visitor-card .brand-sub{font-size:12px;line-height:1.8}
+.visitor-card .experience-choice{margin:18px 0 12px}
+.visitor-card .experience-choice legend{margin-bottom:8px}
+.visitor-card .experience-option{min-height:72px;padding:11px 9px}
+.visitor-card .visitor-intro{margin:14px 0;font-size:13px}
+.visitor-card .visitor-fields{gap:12px}
+.visitor-card .visitor-fields label{gap:5px}
+.visitor-card .visitor-fields input{min-height:44px}
+.visitor-card .play-button{letter-spacing:0;min-height:44px;padding:10px 12px}
+.visitor-card .visitor-error:empty{min-height:0;margin:7px 0}
+.visitor-card .note{font-size:10px;line-height:1.7;margin:10px 0 0}
+.visitor-card .note:empty,.visitor-card .visitor-intro:empty{display:none}
+.visitor-card .guest-entry{min-height:42px}
+.visitor-card .quality-row{letter-spacing:0;margin-top:12px;gap:6px}
+.loading-meta88{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;margin-top:14px;color:#bccbcf;font:12px/1.8 Vazirmatn,Tahoma,sans-serif}
+.loading-percent88{color:#ffbf81;font-variant-numeric:tabular-nums}
+.loading-downloads88{font:inherit;unicode-bidi:plaintext}
+.loading-card .brand-title{letter-spacing:0}
+.loading-card .progress{height:7px;direction:rtl;justify-content:flex-start;border-radius:99px}
+@media(max-width:520px){.visitor-card{padding:18px 17px 16px;border-radius:16px}.visitor-card .brand-title{font-size:25px}.visitor-card .experience-option strong{font-size:12px}.loading-meta88{flex-direction:column;align-items:flex-start;gap:3px}}
+@media(max-height:620px){.overlay.visitor-entry{align-items:flex-start}.visitor-card{max-height:calc(100dvh - 24px)}.visitor-card .brand-title{font-size:24px}.visitor-card .experience-choice{margin-top:12px}.visitor-card .experience-option{min-height:58px}}

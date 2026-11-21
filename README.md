@@ -14,7 +14,16 @@
 
 **Smart Energy City** is a browser-based, interactive 3D reference project that helps explain energy systems through user-controlled experiments rather than static diagrams.
 
-> **Important distinction:** This public repository is a new, self-contained **educational reference demo** inspired by the scope of the Bargheto Smart Energy City project. It is **not** the private production WordPress plugin, its original bundled Three.js build, its proprietary GLB models, customer records, or company-owned media. The production archive `Bargheto-City-Full-2.5.250-2026-11-21-124746.zip` was reviewed for publication; those production materials were intentionally not uploaded here.
+> **Two clearly separated components:** The simple standalone educational reference remains under `src/` and `/reference/`. The **real sanitized code-only WordPress plugin v2.5.250** is now published under [`production/v2.5.250/`](production/v2.5.250/README.md) with a hardened administrator login and an optional restoration script for three large distributed files. **Private visitor records, GLB models, media, fonts, original server secrets, and database state remain excluded.** The code-only plugin is not a complete independently deployable version of the live game.
+
+
+## Real source code (new)
+
+- **[Actual Smart Energy City WordPress source v2.5.250 — code-only](production/v2.5.250/README.md)**
+- [دستور بازسازی فایل‌های بزرگ و نصب نسخه کد](production/v2.5.250/README.fa.md)
+- [Security hardening required on the **live site**](docs/SECURITY_HARDENING_FA.md)
+
+This source was published with the author's permission and does **not** include the original user data, media or WordPress configuration. The live site is not patched by updating this repository. Large files are stored as checksummed text parts to accommodate publication transport limits.
 
 ## What you can do
 
@@ -63,7 +72,7 @@ npm run build
 
 The broader Smart Energy City product is a WordPress-based 3D educational environment featuring a city simulation with interactive topics such as electricity procurement, virtual power plants, rooftop solar, energy efficiency, energy storage, and VR. The production system also contains office and multiplayer components.
 
-The source archive provided for review was version **2.5.250**. It included a built JavaScript distribution, PHP plugin code, a Babylon.js office, media files, restoration backups, and saved visitor information. We deliberately kept the public educational demo separate while media and company code ownership are reviewed. See [Publication audit](docs/PUBLICATION_AUDIT.md).
+The source archive provided for review was version **2.5.250**. It included a built JavaScript distribution, PHP plugin code, a Babylon.js office, media files, restoration backups, and saved visitor information. The public code-only edition of the actual plugin is now published separately under `production/v2.5.250/`; private media and stored user data remain excluded. See [Publication audit](docs/PUBLICATION_AUDIT.md).
 
 ## Project status
 
@@ -71,7 +80,7 @@ This is an **early-stage** open-source reference, not an established or widely a
 
 ## Open-source boundaries and licensing
 
-The files in this repository's reference demo are MIT-licensed under [LICENSE](LICENSE). External trademarks and the original Bargheto production source/media are **not** part of this license or public repository. Any future publication of production assets requires the rights holder's approval and third-party asset-license checks.
+Owner-authored reference and production source code are released under [MIT](LICENSE). Third-party/vendored code retains its respective licenses and notices under `production/v2.5.250/licenses/`. **Media files, fonts, visitor data and trademarks were not redistributed;** no rights are claimed over them. The original game's prebuilt distribution is a code-only artifact, not proof of an independently reproducible development source build.
 
 ## Maintainer
 
@@ -82,10 +91,10 @@ GitHub: [@babakbinesh23](https://github.com/babakbinesh23)
 - **Original game on Bargheto:** [Open actual version 2.5.250](https://www.bodara.ir/barghetocity/)
 - **Reference demo:** [Simple Three.js teaching example](https://babakbinesh23.github.io/smart-energy-city/reference/)
 - **GitHub Pages:** [Project portal](https://babakbinesh23.github.io/smart-energy-city/)
-- **Releases:** [v0.1.0 public reference release](https://github.com/babakbinesh23/smart-energy-city/releases/tag/v0.1.0) *(requires the automated release workflow to succeed)*
+- **Releases:** [v0.1.0 educational reference](https://github.com/babakbinesh23/smart-energy-city/releases/tag/v0.1.0) · [v2.5.250 code-only source](https://github.com/babakbinesh23/smart-energy-city/releases/tag/v2.5.250-code-only)
 - **Documentation:** [فارسی: Installation](docs/INSTALL_FA.md) · [فارسی: Contributing](docs/CONTRIBUTING_FA.md) · [Deployment instructions](docs/DEMO_SETUP_FA.md) · [Evidence](docs/EVIDENCE.md) · [Release notes](docs/RELEASE_NOTES_v0.1.0.md)
 
-The live demo and release represent the standalone MIT-licensed **public reference**, not production version 2.5.250. Real project adoption statistics are not claimed.
+The GitHub Pages live demo still represents the standalone **educational reference**, not the real v2.5.250 production application. Real project adoption statistics are not claimed.
 
 ## Original project maintenance and source release status
 
@@ -93,4 +102,4 @@ The live demo and release represent the standalone MIT-licensed **public referen
 - **Real-source inventory and publication gates:** [Production source status](docs/PRODUCTION_SOURCE_STATUS.md).
 - **Current public maintenance record:** [Maintainer operations](docs/MAINTAINER_OPERATIONS.md) (real issues, CI, release, and honest limitations).
 
-**Do not confuse the 2.5.250 production archive with this public v0.1.0 reference.** The former has not been redistributed publicly because it includes data/asset rights and deployment dependencies requiring separate checks. Do not claim that this new public repository has years of OSS participation.
+**Do not confuse the code-only v2.5.250 production source with the runnable v0.1.0 educational reference.** The production code is published in a separate folder, but its third-party media, stored data, server and complete original edit/build toolchain are not. Do not claim that this new public repository has years of OSS participation.

@@ -1,0 +1,45 @@
+{
+  "version": "2.5.95",
+  "audio_file": "cooler-expert-2.5.93.mp3",
+  "audio_sha256": "f6e801727527d33a0bb34d3cbfef416e9da9a59e0d59682939aaef1c152ddcf4",
+  "duration_seconds": 134.269375,
+  "camera_cues": [
+    {
+      "at": 43.08,
+      "shot": "pair"
+    },
+    {
+      "at": 47.2,
+      "shot": "standard"
+    },
+    {
+      "at": 50.16,
+      "shot": "bldc"
+    },
+    {
+      "at": 76.81,
+      "shot": "standard"
+    },
+    {
+      "at": 81.34,
+      "shot": "bldc"
+    },
+    {
+      "at": 101.5,
+      "shot": "pair"
+    },
+    {
+      "at": 112.06,
+      "shot": "bldc"
+    },
+    {
+      "at": 117.98,
+      "shot": "pair"
+    }
+  ],
+  "clock": "currentTime of supplied narration; no wall-clock cue timers",
+  "removed_visuals": "comparison cards, graphs, holograms and artificial fans",
+  "bldc_driver": "one finned enclosure with static label, power LED, DC supply, three U/V/W connections and earth lead",
+  "xr": "head tracking remains user-controlled; physical cooler demo and expert speech controls continue",
+  "purpose": "educational 3D demonstration, not a physical installation drawing"
+}

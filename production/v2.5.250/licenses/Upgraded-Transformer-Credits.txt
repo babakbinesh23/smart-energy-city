@@ -1,0 +1,48 @@
+BARGHETO SUBSTATION TRANSFORMER V1 — 2026-10-25 / 1405-08-03
+
+Base: user-supplied high_voltage_power_transformer(1).glb.
+Source SHA256: 54a868d08b4231b83e6f060da01ebf4e6732d99c4d1cc6ca5a1d81fe73b7750e
+Original asset: High voltage power transformer, Showdoze
+https://sketchfab.com/3d-models/high-voltage-power-transformer-727bc7bb6777467dbea2ab6e0590bf4a
+Original embedded license: CC BY-NC 4.0
+https://creativecommons.org/licenses/by-nc/4.0/
+Attribution and noncommercial license retained. This modification does not grant a commercial license.
+
+Final asset: Bargheto-Substation-Transformer-V1-1405-08-03.glb
+45 named meshes; 35,833 triangles. All 11,933 source triangles reused.
+6 radiator fans; 210 visible fasteners. Metric scale.
+Dimensions: 9.4 m x 6.768 m x 6.6 m (including skid and terminals).
+Origin: center of skid footprint at ground y=0; glTF Y-up.
+Original tank, radiator geometry, conservator, bushing rows and support structure remain recognizable.
+Secondary insulators reduced around their mounts. New details are assembled onto this geometry.
+Materials: light gray painted steel (low surface metalness), zinc hardware, brown ceramic,
+painted radiators, graphite base, tinned copper contacts. Original normal detail reduced in strength.
+Minor wear remains in original UV atlas, without heavy rust.
+
+Embedded WebP maps. Meshopt geometry compression is lossless; base-color WebP quality 94;
+normal map resolution 512. Required extensions: EXT_meshopt_compression, EXT_texture_webp.
+Use a current glTF 2.0 loader with both extensions. No external textures or geometry are requested.
+In Three.js configure GLTFLoader.setMeshoptDecoder(MeshoptDecoder); the delivered game already does so.
+Babylon.js requires a glTF loader with these extensions and an available Meshopt decoder.
+Babylon.js and headset performance were not runtime tested here; real WebGL loading was tested in Three.js.
+Do not apply whole-model color overrides; each component uses its authored material.
+The model includes metallic contact pads for external cable routing. Terminal coordinates are in root userData.
+No actual electrical rating or grid behavior is assigned to the new asset.
+
+Reference-informed engineering, not manufacturer-certified design. No claim of rated insulation distances,
+thermal capacity, structural certification or commissioning suitability. Original rating was not supplied.
+The relay is placed along a rising pipe from the main tank toward the conservator, following the general
+arrangement described by Reinhausen: https://www.reinhausen.com/portfolio/protective-devices/buchholz-relays
+The two user-provided reference photographs guide industrial appearance and access/cooling arrangements.
+
+Game V2.5.19: x=88,z=-160, origin y=0.51 on 0.36 m concrete pad above the 0.15 m site floor.
+A 14 x 14 m bay is reserved from ground PV modules; six candidate panel slots are removed.
+Original homes' 390 panels and all older server models are retained.
+The optional model is uploaded separately in the WordPress admin and persists outside plugin updates.
+
+Reproduction: install this folder's package.json dependencies, put the exact original supplied GLB
+at source-transformer.glb, install Playwright Chromium, then npm run export and npm run compress.
+Set CHROMIUM_PATH only when using a custom Chromium installation. Export renders three views and
+writes upgraded-raw.glb; compression writes final.glb. The original input is not duplicated inside
+the plugin ZIP. For game development, restore the shipped font with restore-assets.mjs and copy
+all existing server models plus the new GLB under src/assets/models/; audio belongs in src/assets/audio/.

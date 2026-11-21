@@ -1,0 +1,8 @@
+Source: user-supplied freesound_community-windfarm-turbine-walkbye-56095 (1).mp3
+Source SHA-256: 52439742a9844a82911ef1f83e5a2ade7fd287841a2b4408134020e9ca9c5264
+Original decoded duration: 88.68 seconds.
+Processing: trim original seconds [7, 88.68); mono 24 kHz MP3 at 32 kbps;
+0.2 second entrance fade; 4 second linear ending fade; no voice synthesis.
+Output: wind-turbines-2.5.213.mp3, 327213 bytes, decoded duration 81.68 seconds.
+Output SHA-256: cdbc7ba4d1d390974df2358c345eba183c04b63b3cd257701191ac3c60bca3e5
+No external authorship or licence terms inferred from the uploaded filename.

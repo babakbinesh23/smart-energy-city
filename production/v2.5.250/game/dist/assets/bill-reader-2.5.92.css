@@ -1,0 +1,36 @@
+@import url('./bill-reader-2.5.91.css');
+.bill-reader92 [hidden]{display:none!important}
+.bill-reader92[data-stage=chart] [data-bill=focus],.bill-reader92[data-stage=chart] [data-bill=zoom],.bill-reader92[data-stage=chart] [data-bill=fit],.bill-reader92[data-stage=comparison] [data-bill=focus],.bill-reader92[data-stage=comparison] [data-bill=zoom],.bill-reader92[data-stage=comparison] [data-bill=fit]{display:none}
+.bill-reader92 .bill-reader-paper90:has(>.bill-chart-panel92:not([hidden])),.bill-reader92 .bill-reader-paper90:has(>.bill-comparison92:not([hidden])){overflow:auto;touch-action:pan-x pan-y pinch-zoom}
+.bill-comparison92{direction:rtl;display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:24px;box-sizing:border-box;min-height:100%;align-content:center;background:#e6eff1}
+.bill-comparison92 figure{margin:0;min-width:0;background:white;border:1px solid #c5d8db;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px #183b4210}
+.bill-comparison92 figcaption{padding:18px 20px;display:flex;flex-direction:column;gap:4px;text-align:right;background:#f2f8f7}
+.bill-comparison92 figure:first-child figcaption{background:#fbf0eb}
+.bill-comparison92 figcaption>span{font-size:15px;color:#526e76}.bill-comparison92 figcaption>strong{font-size:clamp(16px,2vw,25px);color:#163c43}.bill-comparison92 figcaption>small{font-size:12px;color:#60777d}
+.bill-reader92 .bill-comparison92 button{display:block;width:100%;padding:12px;border:0;border-radius:0;background:white;min-height:0}
+.bill-reader92 .bill-comparison92 img{display:block;width:100%;height:auto;max-width:100%}
+.bill-chart-panel92{width:100%;min-height:100%;padding:clamp(12px,2vw,24px);box-sizing:border-box;background:#e8f0f1}
+.energy-chart92{font-family:Vazirmatn,Tahoma,sans-serif;color:#173b43;max-width:1120px;margin:auto;box-sizing:border-box;padding:clamp(18px,3vw,36px);border:1px solid #c9dfdf;border-radius:24px;background:linear-gradient(140deg,#fff 35%,#f2faf7);box-shadow:0 16px 44px #173b4310;display:flex;flex-direction:column;gap:clamp(14px,2vh,22px)}
+.energy-chart92 .chart-heading92{display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;gap:24px}
+.chart-kicker92{font-size:12px;font-weight:600;color:#607e83;letter-spacing:.1px}.energy-chart92 h2{font-size:clamp(22px,2.8vw,36px);font-weight:800;line-height:1.6;margin:6px 0}.energy-chart92 .chart-heading92 p{margin:0;font-size:13px;color:#637e83}
+.chart-percent92{flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#126b61;color:#fff;border-radius:18px;padding:12px 22px;min-width:130px;box-sizing:border-box}
+.chart-percent92 strong{font-size:clamp(32px,4vw,50px);line-height:1.4;font-weight:800}.chart-percent92>span{font-size:12px;color:#d7f7eb}
+.chart-baseline92{display:flex;align-items:center;flex-wrap:wrap;gap:6px;font-size:13px;background:#edf5f5;border:1px solid #dce8e8;border-radius:10px;padding:10px 14px;color:#42636b}.chart-dot92{width:7px;height:7px;border-radius:50%;background:#258a7b;display:inline-block;margin-left:4px}
+.chart-plot92{margin:0;display:flex;flex-direction:column;gap:14px}.chart-plot92 figcaption{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:14px;font-weight:700}.chart-plot92 figcaption>span{font-size:11px;font-weight:400;color:#6b858b}
+.chart-axis92{direction:ltr;display:flex;justify-content:space-between;color:#759096;font-size:11px;margin-bottom:-4px}
+.chart-row92{display:flex;flex-direction:column;gap:8px}.chart-row-label92{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 15px}.chart-row-label92>span{font-size:13px;display:flex;align-items:center;gap:7px}.chart-row-label92 i{display:inline-block;width:8px;height:8px;background:#c66c53;border-radius:3px}.chart-after92 i{background:#168779}.chart-row-label92 strong{font-size:clamp(15px,1.8vw,20px);font-weight:700}.chart-row-label92 small{font-size:11px;font-weight:400;color:#6a8186}
+.chart-track92{direction:ltr;height:34px;border:1px solid #dce9e9;border-radius:9px;overflow:hidden;background:repeating-linear-gradient(to right,transparent 0,transparent calc(25% - 1px),#cadcdd 25%),#edf3f3}
+.chart-bar92{height:100%;border-radius:0 8px 8px 0;transform-origin:left center;transform:scaleX(0);background:linear-gradient(90deg,#ad5946,#da9475);box-shadow:inset 0 1px 0 #ffffff4d}
+.chart-after92 .chart-bar92{background:linear-gradient(90deg,#106b63,#36a68c)}
+.chart-metrics92{display:grid;grid-template-columns:1.3fr 1fr;gap:12px}.chart-metrics92>div{display:flex;flex-direction:column;gap:5px;padding:16px 18px;border:1px solid #dce9e5;border-radius:13px;background:#f5f9f7}.chart-metrics92>.chart-saving92{background:#e2f3e9;border-color:#cae4d5}
+.chart-metrics92 span{font-size:12px;color:#56766d}.chart-metrics92 strong{font-size:clamp(16px,2.1vw,24px);font-weight:800;color:#165c4e}.chart-metrics92 small{font-size:11px;font-weight:400;color:#59746c}
+.energy-chart92 .chart-note92{font-size:11px;line-height:1.9;margin:0;color:#74868b;border-top:1px solid #e0eaea;padding-top:12px}
+@media(max-width:650px){.bill-comparison92{grid-template-columns:1fr;gap:14px;padding:12px}.bill-comparison92 figure{border-radius:12px}.bill-comparison92 figcaption{padding:12px 14px}.bill-chart-panel92{padding:8px}.energy-chart92{padding:18px 14px;border-radius:16px;gap:16px}.energy-chart92 .chart-heading92{align-items:flex-start;gap:10px}.energy-chart92 h2{font-size:21px;line-height:1.6}.chart-kicker92{font-size:10px}.energy-chart92 .chart-heading92 p{font-size:11px}.chart-percent92{padding:10px;min-width:92px;border-radius:12px}.chart-percent92 strong{font-size:31px}.chart-percent92>span{font-size:9px}.chart-baseline92{font-size:11px;padding:9px}.chart-plot92 figcaption{font-size:12px;flex-wrap:wrap}.chart-row-label92>span{font-size:12px}.chart-track92{height:30px}.chart-metrics92{grid-template-columns:1fr}.chart-metrics92>div{padding:12px 14px}.chart-metrics92 strong{font-size:20px}}
+@media(prefers-reduced-motion:reduce){.chart-bar92{will-change:auto}}
+
+@media(max-width:650px){.chart-metrics92>div:nth-child(2){display:none}}
+@media(max-height:500px) and (min-width:651px){
+ .bill-chart-panel92{padding:8px}.energy-chart92{max-width:none;display:grid;grid-template-columns:1fr 1.2fr;grid-template-areas:"heading plot" "baseline plot" "note plot";gap:8px 24px;padding:14px 18px;border-radius:14px}
+ .energy-chart92 .chart-heading92{grid-area:heading;gap:10px}.energy-chart92 h2{font-size:19px;margin:2px 0;line-height:1.5}.chart-kicker92{font-size:9px}.energy-chart92 .chart-heading92 p{display:none}.chart-percent92{padding:6px 10px;min-width:80px;border-radius:10px}.chart-percent92 strong{font-size:30px}.chart-percent92>span{font-size:9px}
+ .chart-baseline92{grid-area:baseline;font-size:10px;padding:6px 8px;gap:3px}.chart-plot92{grid-area:plot;gap:7px}.chart-plot92 figcaption{font-size:11px;gap:6px;flex-wrap:wrap}.chart-plot92 figcaption>span{font-size:9px}.chart-axis92{font-size:9px}.chart-row92{gap:5px}.chart-row-label92>span{font-size:10px}.chart-row-label92 strong{font-size:13px}.chart-row-label92 small{font-size:9px}.chart-track92{height:22px}.chart-metrics92{display:none}.energy-chart92 .chart-note92{grid-area:note;font-size:9px;padding-top:7px}
+}
