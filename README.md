@@ -86,3 +86,11 @@ GitHub: [@babakbinesh23](https://github.com/babakbinesh23)
 - **Documentation:** [فارسی: Installation](docs/INSTALL_FA.md) · [فارسی: Contributing](docs/CONTRIBUTING_FA.md) · [Deployment instructions](docs/DEMO_SETUP_FA.md) · [Evidence](docs/EVIDENCE.md) · [Release notes](docs/RELEASE_NOTES_v0.1.0.md)
 
 The live demo and release represent the standalone MIT-licensed **public reference**, not production version 2.5.250. Real project adoption statistics are not claimed.
+
+## Original project maintenance and source release status
+
+- **Private production history:** [version-notes evidence from 2.5.150–2.5.250](docs/ORIGINAL_ARCHIVE_HISTORY.md) (archive-backed, **not** historical public Git commits).
+- **Real-source inventory and publication gates:** [Production source status](docs/PRODUCTION_SOURCE_STATUS.md).
+- **Current public maintenance record:** [Maintainer operations](docs/MAINTAINER_OPERATIONS.md) (real issues, CI, release, and honest limitations).
+
+**Do not confuse the 2.5.250 production archive with this public v0.1.0 reference.** The former has not been redistributed publicly because it includes data/asset rights and deployment dependencies requiring separate checks. Do not claim that this new public repository has years of OSS participation.
