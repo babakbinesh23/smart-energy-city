@@ -1,35 +1,30 @@
-# Public Evidence & Maintenance Record
+# Public-source evidence and maintenance record
 
-**Purpose:** keep substantiated facts separate from proposals and from the proprietary production environment.
+Updated 2026-11-21. The information below separates facts that can be inspected from private-product history and unknown adoption metrics.
 
-## Evidence available on 2026-11-21
-
-| Item | Verifiable basis | Scope |
+| Evidence | Verified public location | Limit |
 | --- | --- | --- |
-| Public repository | [smart-energy-city](https://github.com/babakbinesh23/smart-energy-city) | Public educational reference |
-| Source availability | Three.js app in `src/main.js`; pure models in `src/energy-model.js` | Public reference only |
-| License | [MIT](../LICENSE) | Original files in this repository only |
-| Automated verification | [GitHub Actions](https://github.com/babakbinesh23/smart-energy-city/actions), `npm test`, `npm run build` | Public reference only |
-| Deployment workflow | [Pages workflow](../.github/workflows/pages.yml) | Demonstration deployment; live URL requires Pages enablement |
-| Release documentation | [v0.1.0 notes](RELEASE_NOTES_v0.1.0.md) | Public reference release |
+| Public repository | [Smart Energy City](https://github.com/babakbinesh23/smart-energy-city) | Created 2026-11-21 |
+| Original production code-only snapshot | [v2.5.250 folder](../production/v2.5.250/README.md) | Sanitized; omits media and user data, not a turnkey deployment |
+| Source-only release | [v2.5.250-code-only](https://github.com/babakbinesh23/smart-energy-city/releases/tag/v2.5.250-code-only) | Marked prerelease |
+| Educational code and runnable independent demo | [src](../src) and [reference demo](https://babakbinesh23.github.io/smart-energy-city/reference/) | Does not reproduce original game |
+| Project portal | [GitHub Pages](https://babakbinesh23.github.io/smart-energy-city/) | Link hub, not the production 3D client |
+| Automated tests and deployments | [GitHub Actions](https://github.com/babakbinesh23/smart-energy-city/actions) | CI tests reference and reconstructs/checksums production code-only parts; not a full WordPress runtime test |
+| License | [MIT](../LICENSE) and [third-party notices](../production/v2.5.250/licenses) | Excludes unpublished media/brand rights |
+| Past product development | [Archive version notes](ORIGINAL_ARCHIVE_HISTORY.md) | Earlier private version documentation, not public OSS contributions |
 
-## Prior private project evidence (not public-source adoption)
+## Unknown or unverified
 
-The owner's supplied `Bargheto-City-Full-2.5.250-2026-11-21-124746.zip` identifies a WordPress plugin titled Smart Energy City with version `2.5.250`. The archive contains 826 entries, including built frontend JS, PHP integration, and Babylon.js office assets. See [publication audit](PUBLICATION_AUDIT.md).
+No external contributors, forks, pull requests, customer adoption, classroom installations, external usage, benchmark results, or download counts are asserted here. Real numbers should come from time-stamped and verifiable sources.
 
-That private archive also includes saved visitor information and third-party media licensing constraints. **It has NOT been open-sourced** and must not be counted as an established public OSS release or user/adoption evidence.
+The source archive had 826 ZIP entries. Sensitive visitor records, backup data and separately licensed media are excluded from the code-only public snapshot.
 
-## Evidence not yet available
+## Outstanding maintenance and security
 
-- No independently verified download, traffic, user, classroom usage, exhibition attendance, or adoption metrics for this public repository.
-- No verified external contributors, forks, or pull requests recorded at this initial publication.
-- No independently verified engineering or financial performance outcomes for the educational calculations.
+- Apply and test the administrator-login hardening patch on the live WordPress server; updating GitHub did not do this.
+- Audit WordPress permissions, nonce checks, uploads and storage in a staging environment.
+- Obtain original editable frontend build sources and lockfile if available.
+- Confirm that deployment and code-only split-file restoration work on fresh checkout.
+- Continue real community interaction over time rather than fabricating or backdating Git activity.
 
-## Responsible next steps
-
-- Publish and verify the GitHub Pages live demo
-- Collect optional, consent-based feedback through issues/discussions
-- Maintain real issues, reviewed PRs and documented releases over time
-- If the organization approves, separately clear production code and media before considering public release
-
-**Do not invent popularity, contributors, historical public commits, customers, or exhibition figures for an OpenAI application.**
+This record is intended as accurate evidence for project review, **not a claim that the repository is a mature or widely used open-source project**.

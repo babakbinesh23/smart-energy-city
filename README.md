@@ -94,7 +94,7 @@ GitHub: [@babakbinesh23](https://github.com/babakbinesh23)
 - **Releases:** [v0.1.0 educational reference](https://github.com/babakbinesh23/smart-energy-city/releases/tag/v0.1.0) · [v2.5.250 code-only source](https://github.com/babakbinesh23/smart-energy-city/releases/tag/v2.5.250-code-only)
 - **Documentation:** [فارسی: Installation](docs/INSTALL_FA.md) · [فارسی: Contributing](docs/CONTRIBUTING_FA.md) · [Deployment instructions](docs/DEMO_SETUP_FA.md) · [Evidence](docs/EVIDENCE.md) · [Release notes](docs/RELEASE_NOTES_v0.1.0.md)
 
-The GitHub Pages live demo still represents the standalone **educational reference**, not the real v2.5.250 production application. Real project adoption statistics are not claimed.
+The GitHub Pages **homepage is a project portal**, not a 3D rendering of the production game. The separate `/reference/` page is an independent educational Three.js demo. Original code-only v2.5.250 files are separately available under `production/`, but they need WordPress and licensed media to run. No unverified adoption statistics are claimed.
 
 ## Original project maintenance and source release status
 

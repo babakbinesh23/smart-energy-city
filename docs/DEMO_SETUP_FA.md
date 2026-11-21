@@ -1,28 +1,24 @@
-# انتشار دمو با GitHub Pages
+# راهنمای انتشار GitHub Pages
 
-**Demo target:** https://babakbinesh23.github.io/smart-energy-city/
+GitHub Pages در این مخزن **صفحه معرفی پروژه** و یک **نمونه آموزشی مستقل Three.js** را ارائه می‌کند؛ بازی اصلی `2.5.250` روی وردپرس برقتو اجرا می‌شود.
 
-کد GitHub Actions برای Build و Deploy آماده است: `.github/workflows/pages.yml`. این دمو همان **نمونه مستقل Three.js** است؛ نسخه وردپرسی تولیدی نیست.
+- صفحه معرفی: https://babakbinesh23.github.io/smart-energy-city/
+- نمونه آموزشی جداگانه: https://babakbinesh23.github.io/smart-energy-city/reference/
+- بازی واقعی روی سایت اصلی: https://www.bodara.ir/barghetocity/
 
-## فعال‌سازی یک‌باره در GitHub
+## تنظیم انتشار
 
-1. به https://github.com/babakbinesh23/smart-energy-city/settings/pages برو.
-2. در بخش **Build and deployment**، مقدار **Source** را روی **GitHub Actions** قرار بده.
-3. صفحه را ذخیره کن (اگر GitHub دکمه Save نشان می‌دهد).
-4. وارد https://github.com/babakbinesh23/smart-energy-city/actions/workflows/pages.yml شو.
-5. اگر اجرای خودکار قبلی Failed بود، از **Run workflow** روی شاخه `main` استفاده کن.
-6. بعد از سبزشدن نتیجه، آدرس Demo target را باز کن و تغییر اسلایدرها و محیط WebGL را بررسی کن.
+1. در GitHub وارد Settings → Pages شو.
+2. در Build and deployment، مقدار Source باید **GitHub Actions** باشد.
+3. گردش کار `.github/workflows/pages.yml` پس از تغییرات شاخه `main` به‌طور خودکار Build و Deploy را انجام می‌دهد.
+4. گردش کار دو Job مستقل دارد: Build و Upload Artifact، سپس Deploy؛ این تفکیک برای رفع خطای قبلی شناسایی Artifact انجام شده است.
+5. برای بررسی خطاها از تب Actions استفاده کن.
 
-اگر گزینه Pages یا اجرای GitHub Actions قابل انتخاب نبود، باید مجوزهای حساب و تنظیمات مخزن بررسی شود.
+## بررسی پس از انتشار
 
-## تغییرات آینده
+- [ ] صفحه معرفی باز می‌شود و لینک ورود به بازی اصلی معتبر است
+- [ ] صفحه `/reference/` باز می‌شود و WebGL، انتخاب بخش و اسلایدرها کار می‌کنند
+- [ ] Build و Deploy در GitHub Actions هر دو سبز هستند
+- [ ] هیچ‌کدام از داده‌های خصوصی یا مدل‌های فاقد مجوز در GitHub Pages قرار ندارند
 
-با هر Push به `main`، workflow مجدداً تست، Build و Deploy را اجرا می‌کند.
-
-## چک‌لیست صحت دمو
-
-- [ ] صفحه فارسی باز می‌شود
-- [ ] شهر سه‌بعدی رندر می‌شود
-- [ ] حرکت دوربین و انتخاب مناطق کار می‌کند
-- [ ] مقادیر محاسبه‌گر با تغییر اسلایدر به‌روز می‌شود
-- [ ] کنسول مرورگر خطای جدی مربوط به Asset ندارد
+توجه: موفقیت تست و Build به معنی تست کامل VR، چندنفره یا سرور وردپرس واقعی نیست.

@@ -30,7 +30,7 @@
 
 1. Add browser-based WebGL smoke tests (existing Issue #1).
 2. Improve mobile keyboard, RTL, accessibility, and language support (Issue #2).
-3. Complete source licensing, privacy and rights inventory before publishing any production source.
-4. Extract a new, rights-cleared reusable module from the production project only when ownership is confirmed.
+3. Continue the production security/privacy review; sanitized code-only v2.5.250 is already public, but the **live WordPress server has not been patched**.
+4. Obtain editable original frontend source and reproducible builds; continue third-party asset license review before publishing any media.
 
 **Program context:** Applications to Codex for Open Source are assessed by OpenAI; publishing this documentation is helpful transparency but **not a substitute** for demonstrated ongoing public maintenance, real users, or external contribution.
