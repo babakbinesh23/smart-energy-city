@@ -68,3 +68,11 @@ The files in this repository's reference demo are MIT-licensed under [LICENSE](L
 ## Maintainer
 
 GitHub: [@babakbinesh23](https://github.com/babakbinesh23)
+
+## Online reference demo & public release
+
+- **GitHub Pages demo:** [Interactive educational city](https://babakbinesh23.github.io/smart-energy-city/) *(available after GitHub Pages is enabled under Settings → Pages → GitHub Actions)*
+- **Releases:** [v0.1.0 public reference release](https://github.com/babakbinesh23/smart-energy-city/releases/tag/v0.1.0) *(requires the automated release workflow to succeed)*
+- **Documentation:** [فارسی: Installation](docs/INSTALL_FA.md) · [فارسی: Contributing](docs/CONTRIBUTING_FA.md) · [Deployment instructions](docs/DEMO_SETUP_FA.md) · [Evidence](docs/EVIDENCE.md) · [Release notes](docs/RELEASE_NOTES_v0.1.0.md)
+
+The live demo and release represent the standalone MIT-licensed **public reference**, not production version 2.5.250. Real project adoption statistics are not claimed.

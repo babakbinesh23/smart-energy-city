@@ -1,0 +1,52 @@
+name: Publish initial open-source reference release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/release.yml'
+      - 'docs/RELEASE_NOTES_v0.1.0.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish-reference-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create v0.1.0 prerelease if missing
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const tag = 'v0.1.0';
+            try {
+              await github.rest.repos.getReleaseByTag({owner, repo, tag});
+              core.info(tag + ' already exists; nothing to do');
+              return;
+            } catch (error) {
+              if (error.status !== 404) throw error;
+            }
+            const body = [
+              '## First public open-source reference demo',
+              '- Procedural 3D energy city with Persian RTL controls',
+              '- Educational examples for solar, distributed generation, efficiency, storage, and industrial supply',
+              '- Automated energy-model tests and contribution documentation',
+              '',
+              '**Important:** This is the public educational reference v0.1.0, NOT the private WordPress production plugin v2.5.250 or its media.',
+              '',
+              'See docs/RELEASE_NOTES_v0.1.0.md for notes and limitations.'
+            ].join('\n');
+            const release = await github.rest.repos.createRelease({
+              owner, repo,
+              tag_name: tag,
+              target_commitish: context.sha,
+              name: 'Smart Energy City — public reference v0.1.0',
+              body,
+              draft: false,
+              prerelease: true,
+              make_latest: 'false'
+            });
+            core.info('Created: ' + release.data.html_url);
